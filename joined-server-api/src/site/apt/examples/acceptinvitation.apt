@@ -13,19 +13,19 @@ String JOINED_SERVER = "https://joinedserver.geomobile.de:7012/friendfinder";
 String JOINED_SECRET_SALT = "t9YggWZjhh1Ph9gYNOwP";
 
 /* CREATE CLIENT */
-JoinedClient client = JoinedClient.createJoinedClient(JOINED_SERVER, JOINED_SECRET_SALT);
+JOClient client = JOClient.createJoinedClient(JOINED_SERVER, JOINED_SECRET_SALT);
 
 /* LOGIN USER */
-User user = client.login("username", "password");
+JOUser user = client.login("username", "password");
 
 /* GET FRIENDS */
-List<Friend> friends = friends = client.getFriends(user);
+List<JOFriend> friends = friends = client.getFriends(user);
 
 /* GET ALL INVITATION */
-List<Friend> friendsToAccept = FriendFactory.instance().getFriendsToAccept(friends);
+List<JOFriend> friendsToAccept = JOFriendFactory.instance().getFriendsToAccept(friends);
 
 /* ACCEPT ALL INVITATIONS */
-for (Friend friend : friendsToAccept)
+for (JOFriend friend : friendsToAccept)
 {
   client.addFriend(user, friend);
 }
@@ -33,4 +33,4 @@ for (Friend friend : friendsToAccept)
 
  If the acceptance process fails, the client throws an exception. All potential exceptions are documented in the Java API Documentation of the Joined API for Android and can be found {{{../apidocs/index.html?de/geomobile/joined/api/exception/package-summary.html}here}}. 
  
- An example {{{http://en.wikipedia.org/wiki/JUnit}JUnit}} implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-Adroid-API/blob/master/joined-api/src/test/java/de/geomobile/joined/api/AddFriendsTest.java}here}}. 
+ An example implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-API-Android/tree/master/joined-server-api/src/test/java/de/geomobile/joined/api}here}}.

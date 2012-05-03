@@ -63,7 +63,7 @@
           <version>2.12</version>
           <configuration>
             <includes>
-              <include>**/AllTests.java</include>
+              <include>**/JOAllTests.java</include>
             </includes>
           </configuration>
         </plugin>
@@ -114,8 +114,6 @@
                 <report>dependencies</report>
                 <report>project-team</report>
                 <report>mailing-list</report>
-                <!--  <report>cim</report>  -->
-                <!-- <report>issue-tracking</report>  -->
                 <report>license</report>
                 <report>scm</report>
               </reports>

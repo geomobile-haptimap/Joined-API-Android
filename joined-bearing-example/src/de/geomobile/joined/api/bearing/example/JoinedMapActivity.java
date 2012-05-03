@@ -9,13 +9,15 @@ import com.google.android.maps.MapActivity;
 import com.google.android.maps.MapView;
 import com.google.android.maps.OverlayItem;
 
-import de.geomobile.joined.api.bearing.BPOI;
-import de.geomobile.joined.api.bearing.config.Config;
+import de.geomobile.joined.api.bearing.config.JOBearingConfig;
+import de.geomobile.joined.api.bearing.helper.JOBearingBPOI;
 
-public class JoinedMapActivity extends MapActivity {
+public class JoinedMapActivity extends MapActivity
+{
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
+	protected void onCreate(Bundle savedInstanceState)
+	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.map);
 
@@ -23,15 +25,12 @@ public class JoinedMapActivity extends MapActivity {
 
 		Intent prevIntent = getIntent();
 		Bundle bundle = prevIntent.getExtras();
-		BPOI poi = (BPOI) bundle.getSerializable(Config.DESTINATION);
+		JOBearingBPOI poi = (JOBearingBPOI) bundle.getSerializable(JOBearingConfig.DESTINATION);
 
-		GeoPoint point = new GeoPoint((int) (poi.getLat() * 10E5),
-				(int) (poi.getLon() * 10E5));
+		GeoPoint point = new GeoPoint((int) (poi.getLat() * 10E5), (int) (poi.getLon() * 10E5));
 
-		Drawable drawable = this.getResources().getDrawable(
-				R.drawable.ic_launcher);
-		HelloItemizedOverlay itemizedoverlay = new HelloItemizedOverlay(
-				drawable, this);
+		Drawable drawable = this.getResources().getDrawable(R.drawable.ic_launcher);
+		HelloItemizedOverlay itemizedoverlay = new HelloItemizedOverlay(drawable, this);
 
 		OverlayItem overlayitem = new OverlayItem(point, "", "");
 		itemizedoverlay.addOverlay(overlayitem);
@@ -42,7 +41,8 @@ public class JoinedMapActivity extends MapActivity {
 	}
 
 	@Override
-	protected boolean isRouteDisplayed() {
+	protected boolean isRouteDisplayed()
+	{
 		return false;
 	}
 

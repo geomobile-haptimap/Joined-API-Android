@@ -11,4 +11,4 @@ Example - Bearing
 +--
 SOURCE+--
 
- An example implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-Adroid-API/blob/master/joined-api/src/test/java/de/geomobile/joined/api/RegisterTest.java}here}}. 
+ An example implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-API-Android/tree/master/joined-server-api/src/test/java/de/geomobile/joined/api}here}}.
