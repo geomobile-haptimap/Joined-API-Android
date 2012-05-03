@@ -28,18 +28,14 @@ import java.security.GeneralSecurityException;
 import java.security.KeyStore;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
 
 import org.apache.http.Header;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.HttpVersion;
-import org.apache.http.NameValuePair;
 import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpClient;
-import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpDelete;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -49,17 +45,19 @@ import org.apache.http.conn.scheme.PlainSocketFactory;
 import org.apache.http.conn.scheme.Scheme;
 import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.conn.ssl.SSLSocketFactory;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.mime.MultipartEntity;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.auth.BasicScheme;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager;
-import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.protocol.HTTP;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import de.geomobile.joined.api.config.Config;
 import de.geomobile.joined.api.exception.FriendFinderConflictException;
@@ -198,25 +196,26 @@ public class JoinedService
 
 	/**
 	 * @param name
-	 * @param password
+	 * @param username
 	 * @return
 	 * @throws FriendFinderHTTPException
 	 * @throws FriendFinderServerException
 	 * @throws FriendFinderUnexpectedException
 	 * @throws FriendFinderLoginException
 	 */
-	public String ffLogin(String name, String password) throws FriendFinderHTTPException, FriendFinderServerException, FriendFinderUnexpectedException, FriendFinderLoginException
+	public String ffLogin(String username, String password) throws FriendFinderHTTPException, FriendFinderServerException, FriendFinderUnexpectedException, FriendFinderLoginException
 	{
 		try
 		{
-			List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+			JSONObject jsonUserObject = new JSONObject();
 
-			nameValuePairs.add(new BasicNameValuePair(Config.NICKNAME, name));
-			nameValuePairs.add(new BasicNameValuePair(Config.PASSWORD, getSHA1Hash(password + name)));
+			jsonUserObject.put(Config.NICKNAME, username);
+			jsonUserObject.put(Config.PASSWORD, getSHA1Hash(password + username));
 
 			HttpPost httppost = new HttpPost(getJoinedServerUrl() + Config.FF_LOGIN + "/" + getJoinedApiKey());
 
-			httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+			httppost.setHeader("Content-type", "application/json");
+			httppost.setEntity(new StringEntity(jsonUserObject.toString(), "UTF-8"));
 
 			HttpClient httpClient = getNewHttpClient();
 
@@ -251,9 +250,13 @@ public class JoinedService
 		{
 			throw new FriendFinderHTTPException(e);
 		}
+		catch (JSONException e)
+		{
+			throw new FriendFinderUnexpectedException("JSONException: " + e);
+		}
 		catch (NoSuchAlgorithmException e)
 		{
-			throw new FriendFinderUnexpectedException(e);
+			throw new FriendFinderUnexpectedException("NoSuchAlgorithmException: " + e);
 		}
 	}
 

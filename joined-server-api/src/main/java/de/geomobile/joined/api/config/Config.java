@@ -84,12 +84,12 @@ public class Config
 	/**
 	 * This variable is not documented and for internal use only.
 	 */
-	public static final String FF_REGISTER = "/ffapi/register";
+	public static final String FF_REGISTER = "/ffregister";
 
 	/**
 	 * This variable is not documented and for internal use only.
 	 */
-	public static final String FF_LOGIN = "/ffapi/jsonlogin";
+	public static final String FF_LOGIN = "/fflogin";
 	
 	/**
 	 * This variable is not documented and for internal use only.
