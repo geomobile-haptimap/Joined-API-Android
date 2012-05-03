@@ -41,7 +41,7 @@ public class JOLoginTest extends TestCase
 		try
 		{
 			/* CREATE CLIENT */
-			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.OPEN_API_KEY);
+			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.JOINED_API_KEY);
 
 			/* LOGIN USER */
 			JOUser user1 = client.login(JOConfig.TEST_USER_1, JOConfig.TEST_USER_1);

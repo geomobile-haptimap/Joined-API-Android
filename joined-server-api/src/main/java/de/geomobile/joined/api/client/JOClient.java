@@ -45,7 +45,7 @@ public class JOClient extends JOAbstractClient
 	private JOWebService joinedService;
 
 	/**
-	 * This private methods is used internally to create a client for the Joined server.
+	 * This private method is used internally to create a client for the Joined server.
 	 * 
 	 * @param joinedServerUrl The URL of the Joined server.
 	 * @param joinedSecretSalt The secret salt for accessing the Joined server.
@@ -56,7 +56,7 @@ public class JOClient extends JOAbstractClient
 	}
 
 	/**
-	 * This methods enables users to create an easy to use client for the Joined server.
+	 * This method enables users to create an easy to use client for the Joined server.
 	 * 
 	 * @param pJoinedServerUrl The URL of the Joined server.
 	 * @param joinedSecretSalt The secret salt for accessing the Joined server.

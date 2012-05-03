@@ -30,7 +30,7 @@ public class JoinedManager
 	/* LOGIN USER */
 	public boolean login(String nickname, String password)
 	{
-		client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.OPEN_API_KEY);
+		client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.JOINED_API_KEY);
 		try
 		{
 			user = client.login(nickname, password);

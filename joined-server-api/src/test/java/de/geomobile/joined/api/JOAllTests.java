@@ -61,7 +61,7 @@ public class JOAllTests
 	{
 		try
 		{
-			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.OPEN_API_KEY);
+			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.JOINED_API_KEY);
 			JOUser user1 = client.login(JOConfig.TEST_USER_1, JOConfig.TEST_USER_1);
 			client.delete(user1);
 		}
@@ -72,7 +72,7 @@ public class JOAllTests
 
 		try
 		{
-			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.OPEN_API_KEY);
+			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.JOINED_API_KEY);
 			JOUser user2 = client.login(JOConfig.TEST_USER_2, JOConfig.TEST_USER_2);
 			client.delete(user2);
 		}

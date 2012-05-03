@@ -38,7 +38,7 @@ import de.geomobile.joined.api.exception.JOFriendFinderUnexpectedException;
 public abstract class JOAbstractClient
 {
 	/**
-	 * This methods creates a new user at the Joined server.
+	 * This method creates a new user at the Joined server.
 	 * 
 	 * @param username The name for the new user.
 	 * @param password The password for the new user.
@@ -53,7 +53,7 @@ public abstract class JOAbstractClient
 	abstract public JOUser register(String username, String password) throws JOFriendFinderHTTPException, JOFriendFinderUnexpectedException, JOFriendFinderServerException, JOFriendFinderConflictException;
 	
 	/**
-	 * This methods deletes an existing user at the Joined server.
+	 * This method deletes an existing user at the Joined server.
 	 * 
 	 * @param user The {@link JOUser} object that represents the logged in user. 
 	 * 
@@ -65,7 +65,7 @@ public abstract class JOAbstractClient
 	abstract public void delete(JOUser user) throws JOFriendFinderHTTPException, JOFriendFinderUnexpectedException, JOFriendFinderServerException, JOFriendFinderConflictException;
 	
 	/**
-	 * This methods enables users to login at the Joined server.
+	 * This method enables users to login at the Joined server.
 	 * 
 	 * @param username The name of the user.
 	 * @param password The password of the user.
@@ -80,7 +80,7 @@ public abstract class JOAbstractClient
 	abstract public JOUser login(String username, String password) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException;
 		
 	/**
-	 * This methods enables users to logout at the Joined server.
+	 * This method enables users to logout at the Joined server.
 	 * 
 	 * @param user The {@link JOUser} object that represents the logged in user.
 	 * 
@@ -92,7 +92,7 @@ public abstract class JOAbstractClient
 	abstract public void logout(JOUser user) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException;
 	
 	/**
-	 * This methods updates the position of the user at the Joined server.
+	 * This method updates the position of the user at the Joined server.
 	 * 
 	 * @param user The {@link JOUser} object that represents the logged in user.
 	 * @param latitude The position of the user (latitude coordinate).
@@ -148,7 +148,7 @@ public abstract class JOAbstractClient
 	abstract public List<JOFriend> searchFriends(JOUser user, String nickname) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException;
 	
 	/**
-	 * This methods sends a friends invitation to another user. If the other user accepts the invitation, the user appears at the list of friends. 
+	 * This method sends a friends invitation to another user. If the other user accepts the invitation, the user appears at the list of friends. 
 	 *  
 	 * @param user The {@link JOUser} object that represents the logged in user.
 	 * @param friend The {@link JOFriend} object that represents the other user.
@@ -187,7 +187,7 @@ public abstract class JOAbstractClient
 	abstract public void deleteFriend(JOUser user, JOFriend friend) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException;
 	
 	/**
-	 * This methods sends a text message to a friend.
+	 * This method sends a text message to a friend.
 	 * 
 	 * @param user The {@link JOUser} object that represents the logged in user.
 	 * @param friend The {@link JOFriend} object that represents the friend.
@@ -215,7 +215,7 @@ public abstract class JOAbstractClient
 	abstract public List<JOMessage> getMessages(JOUser user) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException;
 	
 	/**
-	 * This methods deletes all messages in the inbox of the logged in user.
+	 * This method deletes all messages in the inbox of the logged in user.
 	 * 
 	 * @param user The {@link JOUser} object that represents the logged in user.
 	 * 

@@ -31,7 +31,10 @@ public class JOConfig
 	 */
 	public final static String JOINED_SERVER = "https://joinedserver.geomobile.de:8012/friendfinder";
 	
-	public final static String OPEN_API_KEY = "2234567890";
+	/**
+	 * The unqique identifier for the public Joined API.
+	 */
+	public final static String JOINED_API_KEY = "2234567890";
 		
 	/* UNIT TEST */
 

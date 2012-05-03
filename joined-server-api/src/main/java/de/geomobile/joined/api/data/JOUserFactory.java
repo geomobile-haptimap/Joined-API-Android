@@ -41,7 +41,7 @@ public class JOUserFactory
 	}
 
 	/**
-	 * This methods returns an instance of the class.
+	 * This method returns an instance of the class.
 	 * 
 	 * @return An instance of the class.
 	 */

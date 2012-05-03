@@ -43,7 +43,7 @@ public class JORegisterTest extends TestCase
 		{
 			/* CREATE CLIENT */
 			// JoinedClient client = JoinedClient.createJoinedClient(Config.JOINED_SERVER, Config.JOINED_SECRET_SALT);
-			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.OPEN_API_KEY);
+			JOClient client = JOClient.createJoinedClient(JOConfig.JOINED_SERVER, JOConfig.JOINED_API_KEY);
 
 			/* CREATE USER */
 			JOUser user1 = client.register(JOConfig.TEST_USER_1, JOConfig.TEST_USER_1);
