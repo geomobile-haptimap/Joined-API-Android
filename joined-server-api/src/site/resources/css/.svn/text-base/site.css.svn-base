@@ -1,0 +1,17 @@
+body
+{
+  width: 1200px;
+}
+
+p
+{
+  text-align:justify;
+  text-justify:inter-word;
+}
+
+pre
+{
+  text-align:justify;
+  text-justify:inter-word;
+  white-space:pre-wrap;
+}

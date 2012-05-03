@@ -1,0 +1,62 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+             
+Examples
+  
+ The complete Java API Documentation of the Joined API for Android can be found <<{{{./apidocs/index.html}here}}>>. The main entry point for accessing the Joined API for Android is the <<<JoinedClient>>> class, which is documented <<{{{./apidocs/de/geomobile/joined/api/client/JoinedClient.html}here}}>>.
+ 
+ Here's an overview of the examples that are provided in order to show the features of the Joined API for Android.
+  	
+      * <<{{{./examples/createuser.html}Create User}}>>
+      
+      This example shows how to create a new user at the Joined server.
+      
+      * <<{{{./examples/loginuser.html}Login User}}>>
+      
+      This example shows how to login at the Joined server.
+      
+      * <<{{{./examples/searchuser.html}Search User}}>>
+      
+      This example shows how to search other users at the Joined server.
+      
+      * <<{{{./examples/inviteuser.html}Invite User}}>>
+      
+      This example shows how to invite another user to be a friend.
+      
+      * <<{{{./examples/acceptinvitation.html}Accept Invitation}}>>
+      
+      This example shows how to accept the friend invitation of another user.
+      
+      * <<{{{./examples/getfriends.html}Get Friends}}>>
+      
+      This example shows how to get information about my friends.
+      
+      * <<{{{./examples//bearing.html}Update Status}}>>
+
+      This example shows how to take a bearing of a friend.
+      
+      * <<{{{./examples/updatestatus.html}Update Status}}>>
+      
+      This example shows how to change my activity and visibility status at the Joined server.
+      
+      * <<{{{./examples/updateposition.html}Update Position}}>>
+      
+      This example shows how to change my current location at the Joined server.
+      
+      * <<{{{./examples/sendmessage.html}Send Message}}>>
+      
+      This example shows how to send a text message to a friend.
+      
+      * <<{{{./examples/receivemessage.html}Receive Message}}>>
+      
+      This example shows how to receive messages from friends.      
+      
+      * <<{{{./examples/deleteuser.html}Delete User}}>>
+      
+      This example shows how to completely delete a user at the Joined server (including location data, messages, etc.).
+
+ If you have any problems integrating the Joined API for Android in your mobile application, please have a look at the {{{./faq.html}FAQ}} or post on the {{{XXX}mailinglist}}.

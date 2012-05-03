@@ -1,0 +1,52 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+Download
+
+ To use the Joined API for Android in your mobile application, you either can download a read-for-use library or build the SDK directly from source.   
+
+ If you have any problems downloading or building the Joined API for Android, please have a look at the {{{./faq.html}FAQ}} or post on the {{{XXX}mailinglist}}.
+
+* System requirements
+
+ The Joined API for Android requires Java 1.6 or higher. As the Joined API for Android is organized as a multi-module project using Maven, you have to get the source from {{{http://github.com/}GitHup}} and use Maven to compile it. Information about Git can be found <<{{{http://git-scm.com/}here}}>>. Information about Apache Maven 2 can be found <<{{{http://maven.apache.org/}here}}>>. 
+ 
+* Download SDK
+
+ The latest stable release of the Joined API for Android (Version 1.0) can be found <<{{{./download/joined-server-api-1.0.jar}here}}>>.
+
+* Build SDK From Source
+
+ Here's an overview of the steps you must follow to build the Joined API for Android directly from the latest source.
+
+      [[1]] To download the latest source code of the Joined API for Android from GitHub, execute the following command. 
+
++--
+git clone https://github.com/bbaranski/Joined-Adroid-API.git
++--
+      
+      [[1]] To compile the Joined API for Android, change to the <<<Joined-Adroid-API>>> folder and execute the following command.
+
++--
+mvn clean install
++-- 
+
+			The Joined API for Android can be found now at <<<Joined-Adroid-API/joined-api/target/joined-api.jar>>>
+			
+			To build project files for {{{http://www.eclipse.org/}Eclipse}} (optional), execute the following command.
+ 
++--
+mvn eclipse:clean eclipse:eclipse
++-- 
+   
+			To build the documentation (optional), execute the following command.
+ 
++--
+mvn site
++--   
+
+			The documentation of the Joined API for Android can be found now at <<<Joined-Adroid-API/joined-api/target/site>>>
+

@@ -1,0 +1,45 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+Welcome
+             
+ Welcome to the Joined API for Android!
+  
+ <<{{{http://joined.geomobile.de/}Joined}}>> helps you to locate your friends outdoors at open-air festivals, crowded mass events and other strange environments. Joined not only shows the location of your friends on a map, it also provides the direction and distance to your friends by sound and vibration.
+   
+ Joined is available <<for free>> at the <<{{{http://itunes.apple.com/de/app/joined/id478286344?mt=8%22%3E}App Store}} for iPhone>> and <<{{{https://market.android.com/details?id=de.geomobile.joined&feature=search_result#?t=W251bGwsMSwyLDEsImRlLmdlb21vYmlsZS5qb2luZWQiXQ..}Google Play}} for Android>>.
+  
+ The <<Joined API for Android>> is developed in the {{{http://www.haptimap.org/}Haptimap}} research project and enables users to build their own innovative applications based on the Joined infrastructure and the following functionality:
+  
+      * register and login as a new user
+      
+      * search and contact friends
+      
+      * show the location of friends
+      
+      * chat with friends
+      
+      * take a bearing of a friend
+
+ The following Joined API features are planned for the near future.
+
+      * Enable push notifications (already implemented in the original Joined App)
+
+      * Enable login with Facebook account (already implemented in the original Joined App)
+  
+ Here's an overview of the steps you must follow to use the Joined API for Android.
+  
+      * {{{./download.html}Download and install the Joined API for Android}}
+      
+      * {{{./examples.html}Integrate the Joined API for Android in your application}}
+
+      * {{{./demo.html}An example application the shows the basic Joined functionality}}
+
+      
+ The <<Joined API for iPhone>> can be found <<{{{http://joined.geomobile.de/developer/api-ios}here}}>> .
+  
+ If you have any further questions, please contact {{{mailto:b.baranski@geomobile.de}Bastian Baranski}}.
+  

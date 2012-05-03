@@ -1,0 +1,27 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+Example - Search User
+
+ This example shows how to search other users at the Joined server.
+ 
++--
+String JOINED_SERVER = "https://joinedserver.geomobile.de:7012/friendfinder";
+String JOINED_SECRET_SALT = "t9YggWZjhh1Ph9gYNOwP";
+
+/* CREATE CLIENT */
+JoinedClient client = JoinedClient.createJoinedClient(JOINED_SERVER, JOINED_SECRET_SALT);
+
+/* LOGIN USER */
+User user = client.login("username", "password");
+
+/* SEARCH FRIENDS */
+List<Friend> friends = client.searchFriends(user, "nickname");
++--
+
+ If the search process fails, the client throws an exception. All potential exceptions are documented in the Java API Documentation of the Joined API for Android and can be found {{{../apidocs/index.html?de/geomobile/joined/api/exception/package-summary.html}here}}. 
+ 
+ An example {{{http://en.wikipedia.org/wiki/JUnit}JUnit}} implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-Adroid-API/blob/master/joined-api/src/test/java/de/geomobile/joined/api/SearchFriendsTest.java}here}}. 

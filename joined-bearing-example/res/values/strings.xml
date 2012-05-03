@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, JoinedBearingExampleActivity!</string>
+    <string name="app_name">Joined Bearing Example</string>
+
+    <string name="TabHostForHaptiMapActivity">Haptimap tools</string>
+	<string name="GeigerActivityWithSound">Geiger Counter with Sound</string>
+	<string name="GeigerActivityWithVibration">Geiger Counter with Vibration</string>
+	<string name="CompassActivity">Compass</string>
+	<string name="TourGuideOSMActivity">Map view</string>
+	
+</resources>

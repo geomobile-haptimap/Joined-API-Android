@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, JoinedBearingActivity!</string>
+    <string name="app_name">joined-bearing-api</string>
+
+    <string name="hmtk_tabhost_vibration">Vibration</string>
+    <string name="hmtk_tabhost_sound">Sound</string>
+    <string name="hmtk_waiting_for_gps">Waiting for GPS...</string>
+    <string name="hmtk_rotationListener_distance">Distance: %1$s\n</string>
+    <string name="hmtk_rotationListener_accuracy">Accuracy: %1$d m</string>
+    <string name="reached">Destination reached.</string>
+</resources>

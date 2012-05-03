@@ -1,0 +1,51 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+Demonstration
+
+ The Joined API for Android contains an example application that demonstrates the following features.
+
+      * Login with username and password
+
+      * Show a list of friends
+
+      * Start bearing to a friend
+
+ The example application is an Android project that can be found in the <<<Joined-Adroid-API/joined-bearing-example>>> folder. The example application utilizes the <<Joined Bearing API>> that provides a nice and easy to use bearing interface. The Android library project for the Joined Bearing API can be found in the <<<Joined-Adroid-API/joined-bearing-api>>> folder.
+
+* Requirements
+
+ The example application does not implement advanced functionality as for instance user registration, showing the location of friends on a map or sending text messages to friends. To register as a new user and to invite other users to your friend list, please user the official Joined App for <<{{{http://itunes.apple.com/de/app/joined/id478286344?mt=8%22%3E}iPhone}}>> oder <<{{{https://market.android.com/details?id=de.geomobile.joined&feature=search_result#?t=W251bGwsMSwyLDEsImRlLmdlb21vYmlsZS5qb2luZWQiXQ..}Android}}>>.
+
+* Login User
+
+ The example application requires the user to login at the Joined server with a valid user account. The user account can be created with the original Joined app (or with your own application that makes use of the Joined API).
+
+[images/example-login.png] Login
+
+* Show Friends
+
+ After a successful login, the example application shows a friend list of the user. The user can use the original Joined app (or a selfmade application that makes use of the Joined API) to invite other users and to accept friend invitations.
+
+[images/example-friends.png] Login
+
+* Bearing
+
+ You can click on a friend to display the location of a friend on a map or to start bearing a friend.
+
+[images/example-click.png] Click
+
+ The map view shows the latest known location of the friend on a map. 
+
+ <<Note:>> For using this functionality, the developer needs an individual Android Maps API key.
+
+[images/example-map.png] Map
+
+ The bearing view shows the distance and the direction to the latest known location of the friend.
+
+[images/example-bearing.png] Bearing
+
+

@@ -1,0 +1,14 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+             
+Example - Bearing
+
+ This example shows how to take a bearing of a friend.
+ 
++--
+SOURCE+--
+
+ An example implementation of the example is part of the Joined API for Android project and can be found {{{https://github.com/bbaranski/Joined-Adroid-API/blob/master/joined-api/src/test/java/de/geomobile/joined/api/RegisterTest.java}here}}. 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<project name="Joined API for Java">
+  <publishDate format="yyyy-MM-dd" position="right"/>
+  <version position="none"/>
+  <skin>
+    <groupId>org.apache.maven.skins</groupId>
+    <artifactId>maven-default-skin</artifactId>
+    <version>1.0</version>
+  </skin>
+  <body>
+    <menu name="Main">
+      <item name="Welcome" href="index.html"/>
+      <item name="Joined App" href="joined.html"/>
+      <item name="Download" href="download.html"/>
+      <item name="Examples" href="examples.html" collapse="true">
+        <item name="Create User" href="examples/createuser.html"/>
+        <item name="Login User" href="examples/loginuser.html"/>
+        <item name="Search Friends" href="examples/searchuser.html"/>
+        <item name="Invite User" href="examples/inviteuser.html"/>
+        <item name="Accept Invitation" href="examples/acceptinvitation.html"/>
+        <item name="Get Friends" href="examples/getfriends.html"/>        
+        <item name="Update Status" href="examples/updatestatus.html"/>
+        <item name="Update Position" href="examples/updateposition.html"/>
+        <item name="Send Message" href="examples/sendmessage.html"/>
+        <item name="Receive Message" href="examples/receivemessage.html"/>
+        <item name="Delete User" href="examples/deleteuser.html"/>
+      </item>
+      <item name="Demo" href="demo.html"/>
+    </menu>
+    <menu ref="modules"/>
+    <menu ref="reports"/>
+  </body>
+</project>

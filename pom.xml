@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.geomobile.joined</groupId>
+  <artifactId>joined-android-api</artifactId>
+  <name>Joined API for Android</name>
+  <version>1.0</version>
+  <packaging>pom</packaging>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>manual</distribution>
+    </license>
+  </licenses>
+  <organization>
+    <name>GeoMobile GmbH</name>
+    <url>http://www.geomobile.de</url>
+  </organization>
+  <developers>
+    <developer>
+      <name>Bastian Baranski</name>
+      <email>b.baranski@geomobile.de</email>
+      <organization>GeoMobile GmbH</organization>
+      <organizationUrl>http://www.geomobile.de</organizationUrl>
+    </developer>
+    <developer>
+      <name>Christopher Goldschmidt</name>
+      <email>c.goldschmidt@geomobile.de</email>
+      <organization>GeoMobile GmbH</organization>
+      <organizationUrl>http://www.geomobile.de</organizationUrl>
+    </developer>
+    <developer>
+      <name>Feng Feng</name>
+      <email>f.feng@geomobile.de</email>
+      <organization>GeoMobile GmbH</organization>
+      <organizationUrl>http://www.geomobile.de</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git://github.com/bbaranski/Joined-Adroid-API.git</connection>
+    <url>https://github.com/bbaranski/Joined-Adroid-API/tree/master/</url>
+    <developerConnection>scm:git@github.com:bbaranski/Joined-Adroid-API.git</developerConnection>
+  </scm>
+  <modules>
+    <module>joined-server-api</module>
+  </modules>
+  <build>
+    <extensions>
+      <extension>
+        <groupId>org.jvnet.wagon-svn</groupId>
+        <artifactId>wagon-svn</artifactId>
+        <version>1.8</version>
+      </extension>
+    </extensions>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <dependencies>
+          <dependency>
+            <groupId>org.apache.maven.scm</groupId>
+            <artifactId>maven-scm-provider-gitexe</artifactId>
+            <version>1.1-db-1</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+  <properties>
+    <project.organization.name>GeoMobile GmbH</project.organization.name>
+    <project.inceptionYear>2012</project.inceptionYear>
+    <license.licenseName>joined_api_license</license.licenseName>
+    <license.licenseResolver>file://${basedir}/src/license</license.licenseResolver>
+  </properties>
+</project>

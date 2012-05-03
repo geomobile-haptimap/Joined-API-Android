@@ -1,0 +1,38 @@
+            ------
+            Joined API for Android
+            ------
+            Bastian Baranski
+            ------
+   
+Joined App
+  
+  Joined helps you to locate your friends outdoors at open-air festivals, crowded mass events and other strange environments. Joined not only shows the location of your friends on a map, it also provides the direction and distance to your friends by sound and vibration.
+  
+[images/homescreen.png] Homescreen
+
+* Features 
+
+      * <<Registration>>
+      
+      You don't need to create a Joined user account, instead you can easily register with your existing Facebook ID. Alternatively, you can register directly with Joined, just select a username, upload a profile picture and choose your password. 
+      
+      * <<Handshake>>
+      
+      To exchange positioning data with anybody you first have to become friends. This is done by sending and accepting an invitation. Since friendships do not always last forever, you can easily delete existing friendships at any time.
+
+      * <<Bearing>>
+      
+      By touching the arrow beside your friend's nickname you can activate the bearing function. Bearing will show you the right direction by sound or vibration patterns. 
+
+      * <<Chat>>
+            
+      Keep in touch with your friends with the chat function. Send messages to them while they are offline.
+
+      * <<Accessibility>>
+      
+      By activating Voice-Over on your iPhone, Joined becomes fully accessible and can be used by visually impaired and blind people.
+
+      * <<Privacy>> 
+      
+      All personal data acquired by Joined is only used for the purposes of this app and is not further processed or disclosed. Joined only ever stores your last position. As soon as a position update is received your last position is deleted. This way, no movement profiles are created or stored. We ensure that personal data is kept safe from corruption and that access to it is suitably controlled. No data is passed on to any third party.
+  

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with your Joined account"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onLoginClick"
+        android:text="Login" />
+
+</LinearLayout>
