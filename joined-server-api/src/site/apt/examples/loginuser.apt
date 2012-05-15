@@ -10,10 +10,10 @@ Example - Login User
  
 +--
 String JOINED_SERVER = "https://joinedserver.geomobile.de:7012/friendfinder";
-String JOINED_SECRET_SALT = "t9YggWZjhh1Ph9gYNOwP";
+String JOINED_API_KEY = "5923078164";
 
 /* CREATE CLIENT */
-JOClient client = JOClient.createJoinedClient(JOINED_SERVER, JOINED_SECRET_SALT);
+JOClient client = JOClient.createJoinedClient(JOINED_SERVER, JOINED_API_KEY);
 
 /* LOGIN USER */
 JOUser user = client.login("username", "password");

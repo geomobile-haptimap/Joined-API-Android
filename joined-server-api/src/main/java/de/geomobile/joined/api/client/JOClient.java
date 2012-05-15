@@ -144,7 +144,7 @@ public class JOClient extends JOAbstractClient
 	public List<JOFriend> getFriends(JOUser user) throws JOFriendFinderHTTPException, JOFriendFinderServerException, JOFriendFinderUnexpectedException, JOFriendFinderLoginException
 	{
 		String json = joinedService.getFriends(user.getId(), user.getSecureToken());
-		// List<Friend> friends = FriendFactory.instance().createFriends(json);
+		System.out.println(json);
 		List<JOFriend> friends = JOWebServiceParser.getInstance().getFriendList(json);
 		for (JOFriend friend : friends)
 		{

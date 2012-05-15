@@ -306,9 +306,10 @@ public class JOWebService
 	{
 		try
 		{
-			// HttpGet httpGet = new HttpGet(Config.FF_FRIENDS_URL + "/" + userId + Config.FRIENDS);
 			HttpGet httpGet = new HttpGet(getJoinedServerUrl() + JOConfig.FF_FRIENDS + "/" + userId + JOConfig.FRIENDS);
 
+			System.out.println(getJoinedServerUrl() + JOConfig.FF_FRIENDS + "/" + userId + JOConfig.FRIENDS);
+			
 			httpGet.addHeader(getAuthenticationHeader(userId, secureToken));
 
 			HttpClient httpClient = getNewHttpClient();
