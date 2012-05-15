@@ -8,13 +8,17 @@ The project homepage can be found here:
 http://joined.geomobile.de/
 
 #### WHAT IS THE JOINED API?
-The Joined API for Android is developed in the HaptiMap research project. The API enables users to build their own innovative applications based on the Joined infrastructure and the following functionality:
+The Joined API is developed in the HaptiMap research project. The API enables users to build their own innovative applications based on the Joined infrastructure and the following functionality:
 
 - register and login as a new user
 - search and contact friends
 - show the location of friends
 - chat with friends
 - take a bearing of a friend
+
+The Joined API homepage can be found here:
+
+http://joined.geomobile.de/developer/
 
 The Joined API for Android - including installation instructions and example applications - can be found here:
 
