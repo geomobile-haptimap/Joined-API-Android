@@ -25,7 +25,7 @@ Download
       [[1]] To download the latest source code of the Joined API for Android from GitHub, execute the following command. 
 
 +--
-git clone https://github.com/bbaranski/Joined-Adroid-API.git
+git clone git://github.com/bbaranski/Joined-API-Android.git
 +--
       
       [[1]] To compile the Joined API for Android, change to the <<<Joined-Adroid-API>>> folder and execute the following command.
